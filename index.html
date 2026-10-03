@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#eef1f4">
+<title>Orar · Colegiul Național „Mihai Eminescu”</title>
+<link rel="preload" href="fonts/playfair-display-latin-700-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="row">
+    <select id="cls" aria-label="Clasa"><option value="">Alege clasa</option></select>
+    <div class="seg" role="group" aria-label="Săptămâna">
+      <button data-w="0">Săpt. A</button><button data-w="1">Săpt. B</button>
+    </div>
+  </div>
+
+  <div>
+    <p class="lbl">Model</p>
+    <div class="chips" id="designs" role="group" aria-label="Model"></div>
+  </div>
+
+  <div>
+    <p class="lbl">Culoare</p>
+    <div class="row" id="colors" role="group" aria-label="Culoare"></div>
+  </div>
+
+  <p id="msg" role="status">Se încarcă…</p>
+  <div id="stage"><div id="poster" class="poster"></div></div>
+  <button id="dl" class="primary" disabled>Descarcă imaginea</button>
+</main>
+<script src="app.js" defer></script>
+</body>
+</html>
